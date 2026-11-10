@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /config/
+Disallow: /database/
+Disallow: /includes/
+Disallow: /docs/
+
+Sitemap: http://localhost/Phone-Sales/sitemap.xml
+

@@ -1,0 +1,16 @@
+# OS & Editor artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Runtime logs & local environment overrides
+*.log
+.env
+
+# Ignore user-uploaded test product images while preserving folder structure
+assets/uploads/products/*
+!assets/uploads/products/.gitkeep

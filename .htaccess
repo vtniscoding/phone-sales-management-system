@@ -1,0 +1,37 @@
+# NovaPhone Apache Configuration (XAMPP)
+DirectoryIndex index.php index.html
+Options -Indexes
+
+# Block direct HTTP access to documentation, SQL, and sensitive dotfiles
+<FilesMatch "\.(sql|md|log|ini|bak|env)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Prevent direct execution/listing inside config, database, and includes
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(config|database|includes|docs)/ - [F,L]
+</IfModule>
+
+# Gzip compression for text-based storefront assets
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json image/svg+xml application/xml
+</IfModule>
+
+# Browser caching for static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 7 days"
+    ExpiresByType application/javascript "access plus 7 days"
+    ExpiresByType image/webp "access plus 30 days"
+    ExpiresByType image/svg+xml "access plus 30 days"
+    ExpiresByType image/png "access plus 30 days"
+    ExpiresByType image/jpeg "access plus 30 days"
+</IfModule>
+
