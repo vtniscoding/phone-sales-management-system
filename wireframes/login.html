@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe 03: Login Page - NovaPhone</title>
+    <link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+    <header class="wf-toolbar">
+        <span class="wf-toolbar-title">NovaPhone UI Wireframes</span>
+        <nav class="wf-toolbar-nav" aria-label="Wireframe pages">
+            <a href="index.html" class="wf-tab">Overview</a>
+            <a href="home.html" class="wf-tab">1. Home</a>
+            <a href="contact.html" class="wf-tab">2. Contact</a>
+            <a href="login.html" class="wf-tab is-active">3. Login</a>
+            <a href="register.html" class="wf-tab">4. Register</a>
+            <a href="profile.html" class="wf-tab">5. Profile</a>
+            <a href="cart.html" class="wf-tab">6. My Cart</a>
+            <button type="button" class="wf-print-btn" onclick="window.print()">Print / PDF</button>
+        </nav>
+    </header>
+
+    <main class="wf-canvas">
+        <div class="wf-page-meta">
+            <h1>Wireframe 03: Login Page</h1>
+            <span>Target: login.php</span>
+        </div>
+
+        <div class="wf-browser">
+            <div class="wf-browser-bar">
+                <div class="wf-dots"><i></i><i></i><i></i></div>
+                <div class="wf-address-bar">http://localhost/Phone-Sales/login.php</div>
+            </div>
+
+            <div class="wf-header">
+                <div class="wf-container wf-header-inner">
+                    <div class="wf-logo-box">[LOGO] NOVAPHONE</div>
+                    <div class="wf-search-box"><span>Search smartphones...</span><span>[Search]</span></div>
+                    <nav class="wf-nav">
+                        <span class="wf-nav-item">Home</span>
+                        <span class="wf-nav-item">Phones</span>
+                        <span class="wf-nav-item">Deals</span>
+                        <span class="wf-nav-item">Contact</span>
+                        <span class="wf-btn wf-btn-sm is-current">Login</span>
+                        <span class="wf-btn wf-btn-solid wf-btn-sm">Register</span>
+                        <span class="wf-btn wf-btn-sm">Cart [0]</span>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="wf-section">
+                <div class="wf-container wf-split-aside" style="align-items:stretch;">
+                    <!-- Left: Welcome Aside -->
+                    <aside class="wf-box wf-box-tint" style="display:flex; flex-direction:column; justify-content:center;">
+                        <span class="wf-badge" style="align-self:flex-start;">Welcome Back</span>
+                        <h2 style="margin:10px 0 8px;">Sign In to NovaPhone</h2>
+                        <p class="wf-product-meta" style="margin-bottom:14px;">Access your saved smartphone cart, checkout smoothly, and review your warranty &amp; order history anytime.</p>
+                        <ul style="margin:0; padding-left:18px; font-size:12px;">
+                            <li>Automatic guest cart sync upon sign-in</li>
+                            <li>Instant order tracking and status updates</li>
+                            <li>Protected with bcrypt hashing &amp; CSRF verification</li>
+                        </ul>
+                    </aside>
+
+                    <!-- Right: Login Card -->
+                    <div class="wf-box">
+                        <h2 style="margin:0 0 4px;">Sign In</h2>
+                        <p class="wf-product-meta" style="margin-bottom:18px;">New to NovaPhone? <u>Create an account</u></p>
+
+                        <div class="wf-field">
+                            <span class="wf-label">Email Address *</span>
+                            <div class="wf-input">you@example.com</div>
+                        </div>
+
+                        <div class="wf-field">
+                            <span class="wf-label">Password *</span>
+                            <div class="wf-input">
+                                <span>&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span>
+                                <span class="wf-badge">[Show]</span>
+                            </div>
+                        </div>
+
+                        <div class="wf-field" style="margin-top:18px;">
+                            <span class="wf-btn wf-btn-solid wf-btn-block">Sign In</span>
+                        </div>
+
+                        <div class="wf-product-meta" style="text-align:center; margin-top:10px;">
+                            Supports Customer &amp; Admin roles &bull; Calls session_regenerate_id(true)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="wf-footer">
+                <div class="wf-container wf-footer-bottom" style="border-top:0; margin-top:0; padding-top:0;">
+                    <span>&copy; 2026 NovaPhone Store</span>
+                    <span>CSRF Token + password_verify()</span>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
+

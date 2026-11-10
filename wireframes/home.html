@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe 01: Home Page - NovaPhone</title>
+    <link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+    <header class="wf-toolbar">
+        <span class="wf-toolbar-title">NovaPhone UI Wireframes</span>
+        <nav class="wf-toolbar-nav" aria-label="Wireframe pages">
+            <a href="index.html" class="wf-tab">Overview</a>
+            <a href="home.html" class="wf-tab is-active">1. Home</a>
+            <a href="contact.html" class="wf-tab">2. Contact</a>
+            <a href="login.html" class="wf-tab">3. Login</a>
+            <a href="register.html" class="wf-tab">4. Register</a>
+            <a href="profile.html" class="wf-tab">5. Profile</a>
+            <a href="cart.html" class="wf-tab">6. My Cart</a>
+            <button type="button" class="wf-print-btn" onclick="window.print()">Print / PDF</button>
+        </nav>
+    </header>
+
+    <main class="wf-canvas">
+        <div class="wf-page-meta">
+            <h1>Wireframe 01: Home Page</h1>
+            <span>Target: index.php</span>
+        </div>
+
+        <div class="wf-browser">
+            <div class="wf-browser-bar">
+                <div class="wf-dots"><i></i><i></i><i></i></div>
+                <div class="wf-address-bar">http://localhost/Phone-Sales/index.php</div>
+            </div>
+
+            <!-- Top Announcement Bar -->
+            <div class="wf-topbar">
+                <div class="wf-container wf-topbar-inner">
+                    <span>100% Genuine Official Warranty | 0% Installment Available</span>
+                    <span>Hotline: 1900 6868 | 128 Nguyen Van Cu, District 5, Ho Chi Minh City</span>
+                </div>
+            </div>
+
+            <!-- Header -->
+            <div class="wf-header">
+                <div class="wf-container wf-header-inner">
+                    <div class="wf-logo-box">[LOGO] NOVAPHONE</div>
+                    <div class="wf-search-box">
+                        <span>Search iPhone, Galaxy S25, Xiaomi...</span>
+                        <span>[Search]</span>
+                    </div>
+                    <nav class="wf-nav" aria-label="Wireframe navigation">
+                        <span class="wf-nav-item is-current">Home</span>
+                        <span class="wf-nav-item">Phones</span>
+                        <span class="wf-nav-item">Deals</span>
+                        <span class="wf-nav-item">Contact</span>
+                        <span class="wf-btn wf-btn-sm">Login</span>
+                        <span class="wf-btn wf-btn-solid wf-btn-sm">Register</span>
+                        <span class="wf-btn wf-btn-sm">Cart [0]</span>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Hero Slider -->
+            <div class="wf-section">
+                <div class="wf-container">
+                    <div class="wf-hero">
+                        <div>
+                            <span class="wf-badge">Flagship 2025/2026</span>
+                            <h2>iPhone 16 Pro Max Titanium Power</h2>
+                            <p>6.9-inch Super Retina XDR 120Hz display, A18 Pro chip, and 0% installment plans with official 12-month warranty.</p>
+                            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+                                <span class="wf-btn wf-btn-solid">Explore iPhone 16 Pro Max</span>
+                                <span class="wf-btn">Shop All Apple</span>
+                            </div>
+                        </div>
+                        <div class="wf-box">
+                            <span class="wf-badge">0% Installment</span>
+                            <div style="font-size:18px; font-weight:800; margin:8px 0;">33,990,000 VND</div>
+                            <ul style="margin:0; padding-left:16px; font-size:12px;">
+                                <li>Chip: Apple A18 Pro (3nm)</li>
+                                <li>Display: 6.9&quot; OLED 120Hz</li>
+                                <li>Camera: 48MP + 5x Telephoto</li>
+                                <li>Storage: 256GB / 512GB / 1TB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wf-hero-dots">
+                        <span class="is-active"></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Browse by Brand -->
+            <div class="wf-section">
+                <div class="wf-container">
+                    <div class="wf-section-head">
+                        <div>
+                            <h2>Browse by Brand</h2>
+                            <p>Official smartphones from leading global manufacturers.</p>
+                        </div>
+                        <span class="wf-btn wf-btn-sm">View All Phones</span>
+                    </div>
+                    <div class="wf-grid-5">
+                        <div class="wf-brand-card"><div class="wf-img-placeholder">[Apple SVG]</div><strong>Apple</strong></div>
+                        <div class="wf-brand-card"><div class="wf-img-placeholder">[Samsung SVG]</div><strong>Samsung</strong></div>
+                        <div class="wf-brand-card"><div class="wf-img-placeholder">[Xiaomi SVG]</div><strong>Xiaomi</strong></div>
+                        <div class="wf-brand-card"><div class="wf-img-placeholder">[OPPO SVG]</div><strong>OPPO</strong></div>
+                        <div class="wf-brand-card"><div class="wf-img-placeholder">[realme SVG]</div><strong>realme</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Smartphones (4x2 Grid) -->
+            <div class="wf-section">
+                <div class="wf-container">
+                    <div class="wf-section-head">
+                        <div>
+                            <h2>Featured Smartphones</h2>
+                            <p>Top-rated flagship and mid-range phones picked by NovaPhone.</p>
+                        </div>
+                        <span class="wf-btn wf-btn-sm">Explore Catalog</span>
+                    </div>
+                    <div class="wf-grid-4">
+                        <div class="wf-product-card">
+                            <div class="wf-img-placeholder">[Phone WebP 4:3]</div>
+                            <span class="wf-badge">0% Installment</span>
+                            <div class="wf-product-title">iPhone 16 Pro Max</div>
+                            <div class="wf-product-meta">Apple A18 Pro &bull; 6.9&quot; OLED</div>
+                            <div class="wf-product-price">33,990,000 VND</div>
+                            <div class="wf-product-foot"><span class="wf-badge">In Stock (20)</span><span class="wf-btn wf-btn-sm">View Details</span></div>
+                        </div>
+                        <div class="wf-product-card">
+                            <div class="wf-img-placeholder">[Phone WebP 4:3]</div>
+                            <span class="wf-badge">Save 3M VND</span>
+                            <div class="wf-product-title">Samsung Galaxy S25 Ultra</div>
+                            <div class="wf-product-meta">Snapdragon 8 Elite &bull; 6.9&quot;</div>
+                            <div class="wf-product-price">31,990,000 VND</div>
+                            <div class="wf-product-foot"><span class="wf-badge">In Stock (24)</span><span class="wf-btn wf-btn-sm">View Details</span></div>
+                        </div>
+                        <div class="wf-product-card">
+                            <div class="wf-img-placeholder">[Phone WebP 4:3]</div>
+                            <span class="wf-badge">Free Leica Kit</span>
+                            <div class="wf-product-title">Xiaomi 14 Ultra</div>
+                            <div class="wf-product-meta">Snapdragon 8 Gen 3 &bull; 6.73&quot;</div>
+                            <div class="wf-product-price">27,990,000 VND</div>
+                            <div class="wf-product-foot"><span class="wf-badge">In Stock (8)</span><span class="wf-btn wf-btn-sm">View Details</span></div>
+                        </div>
+                        <div class="wf-product-card">
+                            <div class="wf-img-placeholder">[Phone WebP 4:3]</div>
+                            <span class="wf-badge">Exclusive Deal</span>
+                            <div class="wf-product-title">OPPO Find X8 Pro</div>
+                            <div class="wf-product-meta">Dimensity 9400 &bull; 6.78&quot;</div>
+                            <div class="wf-product-price">28,990,000 VND</div>
+                            <div class="wf-product-foot"><span class="wf-badge">In Stock (11)</span><span class="wf-btn wf-btn-sm">View Details</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hot Deals & Trust Highlights -->
+            <div class="wf-section">
+                <div class="wf-container">
+                    <div class="wf-section-head">
+                        <div>
+                            <h2>Hot Deals &amp; Promotions</h2>
+                            <p>Limited-time price drops on best-selling models.</p>
+                        </div>
+                        <span class="wf-btn wf-btn-solid wf-btn-sm">See All Deals</span>
+                    </div>
+                    <div class="wf-grid-4">
+                        <div class="wf-product-card">
+                            <div class="wf-img-placeholder">[Deal Card #1]</div>
+                            <div class="wf-product-title">Galaxy Z Flip6 (-17%)</div>
+                            <div class="wf-product-price">23,990,000 VND</div>
+                        </div>
+                        <div class="wf-product-card">
+                            <div class="wf-img-placeholder">[Deal Card #2]</div>
+                            <div class="wf-product-title">iPhone 15 (-15%)</div>
+                            <div class="wf-product-price">19,490,000 VND</div>
+                        </div>
+                        <div class="wf-product-card">
+                            <div class="wf-img-placeholder">[Deal Card #3]</div>
+                            <div class="wf-product-title">Xiaomi 14 Ultra (-15%)</div>
+                            <div class="wf-product-price">27,990,000 VND</div>
+                        </div>
+                        <div class="wf-product-card">
+                            <div class="wf-img-placeholder">[Deal Card #4]</div>
+                            <div class="wf-product-title">Galaxy S24 FE (-12%)</div>
+                            <div class="wf-product-price">14,990,000 VND</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Strip -->
+            <div class="wf-section">
+                <div class="wf-container">
+                    <div class="wf-grid-4">
+                        <div class="wf-box wf-box-tint"><strong>100% Genuine Products</strong><div class="wf-product-meta">Official warranty across Vietnam</div></div>
+                        <div class="wf-box wf-box-tint"><strong>30-Day Exchange</strong><div class="wf-product-meta">Free 1-to-1 hardware defect swap</div></div>
+                        <div class="wf-box wf-box-tint"><strong>0% Installment Plans</strong><div class="wf-product-meta">Flexible credit card payments</div></div>
+                        <div class="wf-box wf-box-tint"><strong>Fast Local Delivery</strong><div class="wf-product-meta">Same-day in HCMC &amp; Hanoi</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="wf-footer">
+                <div class="wf-container">
+                    <div class="wf-grid-4">
+                        <div><strong>[LOGO] NOVAPHONE</strong><div class="wf-product-meta">128 Nguyen Van Cu, District 5, HCMC<br>Hotline: 1900 6868</div></div>
+                        <div><strong>Shop</strong><div class="wf-product-meta">Home / All Smartphones / Hot Deals / Contact</div></div>
+                        <div><strong>Brands</strong><div class="wf-product-meta">Apple / Samsung / Xiaomi / OPPO / realme</div></div>
+                        <div><strong>Customer Care</strong><div class="wf-product-meta">Cart / Profile / Sign In / Register</div></div>
+                    </div>
+                    <div class="wf-footer-bottom">
+                        <span>&copy; 2026 NovaPhone Store</span>
+                        <span>Wireframe Layout Specification</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
+

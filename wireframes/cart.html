@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe 06: My Cart Page - NovaPhone</title>
+    <link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+    <header class="wf-toolbar">
+        <span class="wf-toolbar-title">NovaPhone UI Wireframes</span>
+        <nav class="wf-toolbar-nav" aria-label="Wireframe pages">
+            <a href="index.html" class="wf-tab">Overview</a>
+            <a href="home.html" class="wf-tab">1. Home</a>
+            <a href="contact.html" class="wf-tab">2. Contact</a>
+            <a href="login.html" class="wf-tab">3. Login</a>
+            <a href="register.html" class="wf-tab">4. Register</a>
+            <a href="profile.html" class="wf-tab">5. Profile</a>
+            <a href="cart.html" class="wf-tab is-active">6. My Cart</a>
+            <button type="button" class="wf-print-btn" onclick="window.print()">Print / PDF</button>
+        </nav>
+    </header>
+
+    <main class="wf-canvas">
+        <div class="wf-page-meta">
+            <h1>Wireframe 06: My Cart Page</h1>
+            <span>Target: cart.php</span>
+        </div>
+
+        <div class="wf-browser">
+            <div class="wf-browser-bar">
+                <div class="wf-dots"><i></i><i></i><i></i></div>
+                <div class="wf-address-bar">http://localhost/Phone-Sales/cart.php</div>
+            </div>
+
+            <div class="wf-header">
+                <div class="wf-container wf-header-inner">
+                    <div class="wf-logo-box">[LOGO] NOVAPHONE</div>
+                    <div class="wf-search-box"><span>Search smartphones...</span><span>[Search]</span></div>
+                    <nav class="wf-nav">
+                        <span class="wf-nav-item">Home</span>
+                        <span class="wf-nav-item">Phones</span>
+                        <span class="wf-nav-item">Deals</span>
+                        <span class="wf-nav-item">Contact</span>
+                        <span class="wf-btn wf-btn-sm">Login</span>
+                        <span class="wf-btn wf-btn-solid wf-btn-sm">Register</span>
+                        <span class="wf-btn wf-btn-sm is-current">Cart [2]</span>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="wf-banner">
+                <div class="wf-container">
+                    <div class="wf-breadcrumb">Home / Shopping Cart</div>
+                    <h2>Your Shopping Cart</h2>
+                </div>
+            </div>
+
+            <div class="wf-section">
+                <div class="wf-container wf-split-cart">
+                    <!-- Left: Cart Items Panel -->
+                    <div class="wf-box">
+                        <div class="wf-section-head">
+                            <h2>Cart Items (2)</h2>
+                            <span class="wf-btn wf-btn-sm">Clear Cart</span>
+                        </div>
+
+                        <div class="wf-cart-row">
+                            <div class="wf-img-placeholder" style="height:64px;">[Phone Img]</div>
+                            <div>
+                                <div class="wf-product-meta">APPLE</div>
+                                <strong>iPhone 16 Pro Max</strong>
+                                <div class="wf-product-meta">[o] 8GB / 256GB - Desert Titanium &bull; SKU: IP16PM-256-DES</div>
+                            </div>
+                            <div style="text-align:right;">
+                                <strong>33,990,000 VND</strong>
+                            </div>
+                            <div style="display:flex; gap:6px; align-items:center;">
+                                <div class="wf-qty-box"><span>-</span><span>1</span><span>+</span></div>
+                                <span class="wf-btn wf-btn-sm">Update</span>
+                            </div>
+                            <div style="text-align:right;">
+                                <strong>33,990,000 VND</strong>
+                                <div class="wf-product-meta"><u>Remove</u></div>
+                            </div>
+                        </div>
+
+                        <div class="wf-cart-row">
+                            <div class="wf-img-placeholder" style="height:64px;">[Phone Img]</div>
+                            <div>
+                                <div class="wf-product-meta">SAMSUNG</div>
+                                <strong>Samsung Galaxy Z Flip6</strong>
+                                <div class="wf-product-meta">[o] 12GB / 512GB - Yellow &bull; SKU: ZF6-512-YLW</div>
+                                <span class="wf-badge">Low Stock (4 left)</span>
+                            </div>
+                            <div style="text-align:right;">
+                                <strong>26,990,000 VND</strong>
+                            </div>
+                            <div style="display:flex; gap:6px; align-items:center;">
+                                <div class="wf-qty-box"><span>-</span><span>1</span><span>+</span></div>
+                                <span class="wf-btn wf-btn-sm">Update</span>
+                            </div>
+                            <div style="text-align:right;">
+                                <strong>26,990,000 VND</strong>
+                                <div class="wf-product-meta"><u>Remove</u></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Order Summary -->
+                    <aside class="wf-box wf-box-tint">
+                        <h3 style="margin-top:0;">Order Summary</h3>
+                        <div class="wf-summary-line">
+                            <span>Items (2)</span>
+                            <strong>60,980,000 VND</strong>
+                        </div>
+                        <div class="wf-summary-line">
+                            <span>Nationwide Shipping</span>
+                            <strong>Free</strong>
+                        </div>
+                        <div class="wf-summary-line wf-summary-total">
+                            <span>Estimated Total</span>
+                            <span>60,980,000 VND</span>
+                        </div>
+
+                        <div style="display:grid; gap:8px; margin-top:16px;">
+                            <span class="wf-btn wf-btn-solid wf-btn-block">Proceed to Checkout</span>
+                            <span class="wf-btn wf-btn-block">Continue Shopping</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+            <footer class="wf-footer">
+                <div class="wf-container wf-footer-bottom" style="border-top:0; margin-top:0; padding-top:0;">
+                    <span>&copy; 2026 NovaPhone Store</span>
+                    <span>Stock-Capped Quantities &bull; Guest Cart Sync</span>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
+

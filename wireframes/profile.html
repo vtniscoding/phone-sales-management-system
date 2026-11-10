@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe 05: Profile Page - NovaPhone</title>
+    <link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+    <header class="wf-toolbar">
+        <span class="wf-toolbar-title">NovaPhone UI Wireframes</span>
+        <nav class="wf-toolbar-nav" aria-label="Wireframe pages">
+            <a href="index.html" class="wf-tab">Overview</a>
+            <a href="home.html" class="wf-tab">1. Home</a>
+            <a href="contact.html" class="wf-tab">2. Contact</a>
+            <a href="login.html" class="wf-tab">3. Login</a>
+            <a href="register.html" class="wf-tab">4. Register</a>
+            <a href="profile.html" class="wf-tab is-active">5. Profile</a>
+            <a href="cart.html" class="wf-tab">6. My Cart</a>
+            <button type="button" class="wf-print-btn" onclick="window.print()">Print / PDF</button>
+        </nav>
+    </header>
+
+    <main class="wf-canvas">
+        <div class="wf-page-meta">
+            <h1>Wireframe 05: Profile Page</h1>
+            <span>Target: profile.php (Authenticated Customer)</span>
+        </div>
+
+        <div class="wf-browser">
+            <div class="wf-browser-bar">
+                <div class="wf-dots"><i></i><i></i><i></i></div>
+                <div class="wf-address-bar">http://localhost/Phone-Sales/profile.php</div>
+            </div>
+
+            <div class="wf-header">
+                <div class="wf-container wf-header-inner">
+                    <div class="wf-logo-box">[LOGO] NOVAPHONE</div>
+                    <div class="wf-search-box"><span>Search smartphones...</span><span>[Search]</span></div>
+                    <nav class="wf-nav">
+                        <span class="wf-nav-item">Home</span>
+                        <span class="wf-nav-item">Phones</span>
+                        <span class="wf-nav-item">Deals</span>
+                        <span class="wf-nav-item">Contact</span>
+                        <span class="wf-nav-item is-current">Tran Minh Anh</span>
+                        <span class="wf-btn wf-btn-sm">Logout</span>
+                        <span class="wf-btn wf-btn-sm">Cart [0]</span>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="wf-banner">
+                <div class="wf-container">
+                    <div class="wf-breadcrumb">Home / My Profile &amp; Orders</div>
+                    <h2>My Account</h2>
+                    <p>Member since Nov 2026 &bull; khach1@novaphone.vn</p>
+                </div>
+            </div>
+
+            <div class="wf-section">
+                <div class="wf-container">
+                    <!-- Top 2 Cards: Profile Info + Change Password -->
+                    <div class="wf-grid-2" style="margin-bottom:20px;">
+                        <div class="wf-box">
+                            <h3 style="margin-top:0;">Profile &amp; Delivery Defaults</h3>
+                            <div class="wf-field">
+                                <span class="wf-label">Email Address (Read-only)</span>
+                                <div class="wf-input wf-input-disabled">khach1@novaphone.vn</div>
+                            </div>
+                            <div class="wf-grid-2">
+                                <div class="wf-field">
+                                    <span class="wf-label">Full Name *</span>
+                                    <div class="wf-input">Tran Minh Anh</div>
+                                </div>
+                                <div class="wf-field">
+                                    <span class="wf-label">Phone Number *</span>
+                                    <div class="wf-input">0912345678</div>
+                                </div>
+                            </div>
+                            <div class="wf-field">
+                                <span class="wf-label">Default Shipping Address</span>
+                                <div class="wf-input">45 Le Loi, District 1, Ho Chi Minh City</div>
+                            </div>
+                            <span class="wf-btn wf-btn-solid">Save Profile Changes</span>
+                        </div>
+
+                        <div class="wf-box">
+                            <h3 style="margin-top:0;">Change Password</h3>
+                            <div class="wf-field">
+                                <span class="wf-label">Current Password *</span>
+                                <div class="wf-input"><span>&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span><span class="wf-badge">[Show]</span></div>
+                            </div>
+                            <div class="wf-field">
+                                <span class="wf-label">New Password *</span>
+                                <div class="wf-input"><span>Minimum 8 chars</span><span class="wf-badge">[Show]</span></div>
+                            </div>
+                            <div class="wf-field">
+                                <span class="wf-label">Confirm New Password *</span>
+                                <div class="wf-input"><span>Re-enter new password</span><span class="wf-badge">[Show]</span></div>
+                            </div>
+                            <div class="wf-checklist">
+                                <span>[ ] 8+ chars</span>
+                                <span>[ ] Uppercase</span>
+                                <span>[ ] Lowercase</span>
+                                <span>[ ] Number</span>
+                            </div>
+                            <span class="wf-btn">Update Password</span>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Card: Order History -->
+                    <div class="wf-box">
+                        <div class="wf-section-head">
+                            <h2>Order History (2)</h2>
+                            <span class="wf-btn wf-btn-sm">Shop More Phones</span>
+                        </div>
+
+                        <table class="wf-table">
+                            <thead>
+                                <tr>
+                                    <th>Order Code</th>
+                                    <th>Date</th>
+                                    <th>Payment</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>NP20261102</strong></td>
+                                    <td>Nov 10, 2026 14:20</td>
+                                    <td>COD <span class="wf-badge">Unpaid</span></td>
+                                    <td><strong>16,990,000 VND</strong></td>
+                                    <td><span class="wf-badge">Shipping</span></td>
+                                    <td><span class="wf-btn wf-btn-sm">View Details</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>NP20261101</strong></td>
+                                    <td>Nov 08, 2026 09:45</td>
+                                    <td>Bank Transfer <span class="wf-badge">Paid</span></td>
+                                    <td><strong>33,990,000 VND</strong></td>
+                                    <td><span class="wf-badge">Completed</span></td>
+                                    <td><span class="wf-btn wf-btn-sm">View Details</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="wf-box wf-box-tint" style="margin-top:14px;">
+                            <strong>[Expandable Order Detail Inspection Panel: ?order=NP20261101]</strong>
+                            <div class="wf-product-meta">Shows recipient details, shipping address, payment method, and itemized smartphone table.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="wf-footer">
+                <div class="wf-container wf-footer-bottom" style="border-top:0; margin-top:0; padding-top:0;">
+                    <span>&copy; 2026 NovaPhone Store</span>
+                    <span>Authenticated Customer Session</span>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
+
